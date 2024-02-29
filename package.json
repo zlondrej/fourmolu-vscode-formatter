@@ -2,13 +2,22 @@
   "name": "fourmolu-vscode-formatter",
   "displayName": "Fourmolu formatter",
   "description": "Haskell vscode formatter extension based on fourmolu",
-  "version": "1.0",
+  "version": "1.0.0",
+  "publisher": "zlondrej",
+  "homepage": "https://github.com/zlondrej/fourmolu-vscode-formatter",
   "engines": {
     "vscode": "^1.1.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "haskell",
+    "ormolu",
+    "fourmolu",
+    "formatter"
+  ],
+  "icon": "fourmolu-vscode.png",
   "activationEvents": [
     "onLanguage:haskell"
   ],

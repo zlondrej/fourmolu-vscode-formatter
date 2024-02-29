@@ -41,6 +41,12 @@ export function activate(context: vscode.ExtensionContext) {
             , "stderr": process.stderr.toString()
             }
           );
+
+          vscode.window.showErrorMessage(
+            `An error occurred while trying to format the file. ${process.stderr.toString()}`
+          );
+
+          return [];
         }
 
         return [vscode.TextEdit.replace(

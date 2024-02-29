@@ -37,8 +37,9 @@ export function activate(context: vscode.ExtensionContext) {
 
         if (process.error || process.status !== 0) {
           console.error('An error occurred while trying to format the file',
-            { "error": process.error
-            , "stderr": process.stderr.toString()
+            {
+              "error": process.error,
+              "stderr": process.stderr.toString()
             }
           );
 
